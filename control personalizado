@@ -1,0 +1,8 @@
+controls: {
+    bold : {
+        exec: function() {
+            var selection = getIframeSelectionText(this.editor[0]);
+            $(this.original).wysiwyg('insertHtml', '<font class="bold">' + selection + '</font>');
+        }
+    }
+}
